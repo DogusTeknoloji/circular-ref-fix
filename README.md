@@ -46,9 +46,8 @@ var circularFix = require('../index');
 var createRefs = circularFix.createRefs;
 
 var fixed = createRefs(couple);
-console.log(fixed);
 ```
-Produces below json;
+Produces below JSON;
 ```JavaScript
 [  
    {  
@@ -111,5 +110,15 @@ Also, we can restore circular structure back;
 
 ```JavaScript
 var circularFix = require('../index');
-var restored = restoreRefs(fixed, true); // with true option, we tell circular-ref-fix to delete $id fields
+var restored = restoreRefs(fixed, true); // with true option, we tell restoreRefs to delete $id fields
+```
+
+Json.NET can handle these structure too;
+
+```CSharp
+var settings = new JsonSerializerSettings {
+    PreserveReferencesHandling = PreserveReferencesHandling.Objects
+};
+
+JsonConvert.DeserializeObject<List<Parent>>(fixedStr, settings);
 ```
