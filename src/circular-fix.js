@@ -1,4 +1,5 @@
 (function (root, factory) {
+    /* istanbul ignore else */
     if (typeof exports === "object") {
         module.exports = factory();
     } else if (typeof define === "function" && define.amd) {
@@ -72,6 +73,7 @@
             for (var p in o) {
                 if (p === '$id') {
                     refs[+o.$id] = o;
+                    /* istanbul ignore else */ 
                     if (deleteIdFields === true) {
                         delete o.$id;
                     }
