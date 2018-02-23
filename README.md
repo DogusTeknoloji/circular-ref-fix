@@ -48,10 +48,8 @@ var createRefs = circularFix.createRefs;
 var fixed = createRefs(couple);
 console.log(fixed);
 ```
-
-```JavaScript
 Produces below json;
-
+```JavaScript
 [  
    {  
       "$id":"1",
@@ -108,4 +106,10 @@ Produces below json;
       "$ref":"2"
    }
 ]
+```
+Also, we can restore circular structure back;
+
+```JavaScript
+var circularFix = require('../index');
+var restored = restoreRefs(fixed, true); // with true option, we tell circular-ref-fix to delete $id fields
 ```
