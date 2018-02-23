@@ -26,13 +26,13 @@
         function fixObject(o) {
             var existingId = seen.indexOf(o);
             if (existingId >= 0) return {
-                $ref: existingId
+                $ref: (existingId + 1) + ''
             };
 
-            var newObj = {
-                $id: seen.length
-            };
             seen.push(o);
+            var newObj = {
+                $id: seen.length + ''
+            };
 
             for (var p in o) {
                 newObj[p] = fix(o[p]);
@@ -44,7 +44,7 @@
         return fix(obj);
     }
 
-    function restoreRefs(obj) {
+    function restoreRefs(obj, deleteIdFields) {
         var refs = [];
         var fixers = [];
 
@@ -71,8 +71,10 @@
         function fixObject(o) {
             for (var p in o) {
                 if (p === '$id') {
-                    refs[o.$id] = o;
-                    delete o.$id;
+                    refs[+o.$id] = o;
+                    if (deleteIdFields === true) {
+                        delete o.$id;
+                    }
                     continue;
                 }
 
@@ -94,7 +96,7 @@
 
         function fixer(o, p, r) {
             return function () {
-                o[p] = refs[r];
+                o[p] = refs[+r];
             }
         }
 

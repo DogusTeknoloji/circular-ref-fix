@@ -30,7 +30,7 @@ describe('restoreRefs function', function () {
     var fixedCouple = getFixedCouple();
     
     it('should replace refs with original objects', function (done) {
-        var restoredCouple = restoreRefs(fixedCouple);
+        var restoredCouple = restoreRefs(fixedCouple, true);
         assert.deepEqual(couple, restoredCouple);
 
         done();
