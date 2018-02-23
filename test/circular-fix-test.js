@@ -7,7 +7,6 @@ var restoreRefs = circularFix.restoreRefs;
 describe('createRefs function', function () {
     var couple = getCouple();
     var fixedCouple = createRefs(couple);
-    console.log(JSON.stringify(fixedCouple));
 
     it('should replace recurring instances with refs', function (done) {
         assert.equal(2, fixedCouple.length);
