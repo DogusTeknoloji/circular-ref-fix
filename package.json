@@ -1,6 +1,6 @@
 {
   "name": "circular-ref-fix",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Adds $id fields to objects and replaces circular dependencies to recurring objects with $ref pointers, like Json.NET does.",
   "main": "index.js",
   "scripts": {
