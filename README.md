@@ -1,6 +1,6 @@
 # circular-ref-fix
 
-[![Build Status](https://travis-ci.org/umutozel/circular-ref-fix.svg?branch=master)](https://travis-ci.org/umutozel/circular-ref-fix)
+[![Build Status](https://travis-ci.org/DogusTeknoloji/circular-ref-fix.svg?branch=master)](https://travis-ci.org/DogusTeknoloji/circular-ref-fix)
 [![Coverage Status](https://coveralls.io/repos/github/umutozel/circular-ref-fix/badge.svg?branch=master)](https://coveralls.io/github/umutozel/circular-ref-fix?branch=master)
 [![npm version](https://badge.fury.io/js/circular-ref-fix.svg)](https://badge.fury.io/js/circular-ref-fix)
 
