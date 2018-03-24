@@ -21,7 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/umutozel/circular-ref-fix.git"
+    "url": "git+https://github.com/DogusTeknoloji/circular-ref-fix.git"
   },
   "keywords": [
     "javascript",
@@ -29,7 +29,7 @@
     "json"
   ],
   "bugs": {
-    "url": "https://github.com/umutozel/circular-ref-fix/issues"
+    "url": "https://github.com/DogusTeknoloji/circular-ref-fix/issues"
   },
-  "homepage": "https://github.com/umutozel/circular-ref-fix#readme"
+  "homepage": "https://github.com/DogusTeknoloji/circular-ref-fix#readme"
 }
