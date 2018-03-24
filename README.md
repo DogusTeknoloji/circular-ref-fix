@@ -1,7 +1,7 @@
 # circular-ref-fix
 
 [![Build Status](https://travis-ci.org/DogusTeknoloji/circular-ref-fix.svg?branch=master)](https://travis-ci.org/DogusTeknoloji/circular-ref-fix)
-[![Coverage Status](https://coveralls.io/repos/github/umutozel/circular-ref-fix/badge.svg?branch=master)](https://coveralls.io/github/umutozel/circular-ref-fix?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/DogusTeknoloji/circular-ref-fix/badge.svg?branch=master)](https://coveralls.io/github/DogusTeknoloji/circular-ref-fix?branch=master)
 [![npm version](https://badge.fury.io/js/circular-ref-fix.svg)](https://badge.fury.io/js/circular-ref-fix)
 
 :ferris_wheel: Fixes circular dependencies using $id identifiers and $ref pointers. Produces Json.NET friendly result.
