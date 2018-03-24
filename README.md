@@ -49,7 +49,7 @@ var createRefs = circularFix.createRefs;
 
 var fixed = createRefs(couple);
 ```
-Produces below JSON;
+Produces below object;
 ```JavaScript
 [  
    {  
@@ -115,7 +115,7 @@ var circularFix = require('circular-ref-fix');
 var restored = restoreRefs(fixed, true); // with true option, we tell restoreRefs to delete $id fields
 ```
 
-Json.NET can handle these structure too;
+Json.NET can handle this structure too;
 
 ```CSharp
 var settings = new JsonSerializerSettings {
